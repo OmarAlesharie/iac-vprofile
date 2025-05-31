@@ -40,7 +40,7 @@ jobs:
 
       - name: Terraform init
         id: init
-        run: terraform init -backend-congif="backet=$BUCKET_TF_STATE"
+        run: terraform init -backend-config="backet=$BUCKET_TF_STATE"
         
       - name: Terraform format
         run: terraform fmt -check
